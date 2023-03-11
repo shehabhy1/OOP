@@ -1,0 +1,21 @@
+/* Create a subclass of Person called Student. 
+A student should have an additional attribute called studentId, representing their unique identifier.
+ Add the following methods to the Student class:
+getStudentId(): returns the student ID of the student.
+setStudentId(studentId): sets the student ID of the student to the given studentId value. */
+import 'person.dart';
+
+class Student extends Person {
+  String studentId;
+
+  Student(String fName, String lName, int age, String email, this.studentId)
+      : super(fName, lName, age, email);
+
+  String getStudentId() {
+    return studentId;
+  }
+
+  void setStudentId(String studentId) {
+    this.studentId = studentId;
+  }
+}
