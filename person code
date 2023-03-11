@@ -1,0 +1,53 @@
+/* firstName: the first name of the person.
+lastName: the last name of the person.
+age: the age of the person.
+email: the email address of the person.
+Add the following methods to the Person class:
+getFirstName(): returns the first name of the person.
+getLastName(): returns the last name of the person.
+getAge(): returns the age of the person.
+getEmail(): returns the email address of the person.
+setFirstName(firstName): sets the first name of the person to the given firstName value.
+setLastName(lastName): sets the last name of the person to the given lastName value.
+setAge(age): sets the age of the person to the given age value.
+setEmail(email): sets the email address of the person to the given email value. */
+class Person {
+  String fName;
+  String lName;
+  int age;
+  String email;
+
+  Person(this.fName, this.lName, this.age, this.email);
+
+  String getFirstName() {
+    return fName;
+  }
+
+  String getLastName() {
+    return lName;
+  }
+
+  int getAge() {
+    return age;
+  }
+
+  String getEmail() {
+    return email;
+  }
+
+  void setFirstName(String firstName) {
+    this.fName = firstName;
+  }
+
+  void setLastName(String lastName) {
+    this.lName = lastName;
+  }
+
+  void setAge(int age) {
+    this.age = age;
+  }
+
+  void setEmail(String email) {
+    this.email = email;
+  }
+}
