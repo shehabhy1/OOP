@@ -1,0 +1,26 @@
+/* Create a subclass of Student called GraduateStudent. 
+A graduate student should have an additional attribute called projectTitle, 
+representing the title of their graduation project. Add the following methods to the GraduateStudent class:
+getProjectTitle(): returns the project title of the graduate student.
+setProjectTitle: sets the project title of the graduate student to the given projectTitle value
+
+Finally, create an object of the GraduateStudent class and perform several operations such as getting and setting attributes,
+ and invoking the getFirstName, getLastName, getAge, getEmail, getStudentId, 
+ and getProjectTitle methods to ensure that all methods are working correctly. */
+import 'student.dart';
+
+class GraduateStudent extends Student {
+  String projectTitle;
+
+  GraduateStudent(String fName, String lastName, int age, String email,
+      String studentId, this.projectTitle)
+      : super(fName, lastName, age, email, studentId);
+
+  String getProjectTitle() {
+    return projectTitle;
+  }
+
+  void setProjectTitle(String projectTitle) {
+    this.projectTitle = projectTitle;
+  }
+}
